@@ -4,7 +4,10 @@ import pandas as pd
 import string
 import spacy
 #sp = spacy.load('en_core_web_sm')
-
+import nltk
+nltk.download(‘stopwords’)
+from nltk.corpus import stopwords
+stop = stopwords.words('english')
 
 def text_validity(text):
     words = text.split()
@@ -134,8 +137,7 @@ if uploaded_json is not None:
         df_working["Data"] = df_working["Data"].replace('-'," ")
 
         # remove stopwords
-        from nltk.corpus import stopwords
-        stop = stopwords.words('english')
+
         #df_working["Data"] = df_working["Data"].apply(lambda x: ' '.join([word for word in x.split() if word not in (stop)]))
 
         # strip punctuation
