@@ -5,7 +5,7 @@ import string
 import spacy
 #sp = spacy.load('en_core_web_sm')
 import nltk
-nltk.download('stopwords')
+#nltk.download('stopwords')
 from nltk.corpus import stopwords
 stop = stopwords.words('english')
 
