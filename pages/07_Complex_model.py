@@ -33,7 +33,10 @@ else:
 
                 #sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
                 #embeddings = sentence_model.encode(df_working.Data.values.tolist(), show_progress_bar=True)
-
+                st.write('error here?')
+                
+                st.write('df_working')
+                st.write(df_working)
                 berttopic_model = BERTopic(nr_topics = 'auto').fit(df_working.Data.values.tolist())#, embeddings)
 
             with st.spinner(text="Fitting model on documents, this may take a while"):
