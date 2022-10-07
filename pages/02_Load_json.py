@@ -4,7 +4,11 @@ import pandas as pd
 import string
 import spacy
 #sp = spacy.load('en_core_web_sm')
+#from nltk.corpus import stopwords
+#stop = stopwords.words('english')
+import nltk
 from nltk.corpus import stopwords
+nltk.download('stopwords')
 stop = stopwords.words('english')
 
 def text_validity(text):
