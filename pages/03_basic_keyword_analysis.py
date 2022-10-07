@@ -11,7 +11,7 @@ pd.set_option('precision', 0)
 import subprocess
 cmd = ['python3', '-m', 'textblob.download_corpora']
 subprocess.run(cmd)
-print("working")
+st.write("working")
 
 
 @st.cache()
