@@ -8,6 +8,12 @@ stop = stopwords.words('english')
 pd.set_option('precision', 0)
 #from sklearn.feature_extraction.text import TfidfVectorizer
 
+import subprocess
+cmd = ['python3', '-m', 'textblob.download_corpora']
+subprocess.run(cmd)
+print("working")
+
+
 @st.cache()
 def keybert_extractor(text, min=1, max=5):
     """
