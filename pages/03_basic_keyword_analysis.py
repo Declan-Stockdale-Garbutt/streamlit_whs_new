@@ -11,7 +11,7 @@ pd.set_option('precision', 0)
 
 import subprocess
 st.write('running subprocess')
-cmd = ['python3', '-m', 'textblob.download_corpora']
+cmd = ['python', '-m', 'textblob.download_corpora'] # was python3
 subprocess.run(cmd)
 st.write("working")
 
