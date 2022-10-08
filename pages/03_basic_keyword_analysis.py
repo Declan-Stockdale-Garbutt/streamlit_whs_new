@@ -1,5 +1,6 @@
 import streamlit as st
 from keybert import KeyBERT
+import textblob
 from textblob import TextBlob
 import pandas as pd
 from nltk.corpus import stopwords
@@ -9,6 +10,7 @@ pd.set_option('precision', 0)
 #from sklearn.feature_extraction.text import TfidfVectorizer
 
 import subprocess
+st.write('running subprocess')
 cmd = ['python3', '-m', 'textblob.download_corpora']
 subprocess.run(cmd)
 st.write("working")
