@@ -97,8 +97,8 @@ else:
                 view_simple_model_button = False
 
 
-
-
+        
+        '''
         st.subheader('Find occurences of Texblob keywords by topic id over time')
         if 'topic_slider_val' not in st.session_state:
             st.session_state.topic_slider_val = False
@@ -126,9 +126,9 @@ else:
         topic_keyword_year_df = topic_keyword_year_df.astype(int)
 
         st.dataframe(topic_keyword_year_df.fillna(0))
-
+        '''
 ###################
-# adding Textblob
+# adding Keybert
         st.subheader('Find occurences of Bert keywords by topic id over time')
         if 'topic_slider_val' not in st.session_state:
             st.session_state.topic_slider_val = False
