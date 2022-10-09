@@ -166,7 +166,6 @@ if uploaded_json is not None:
 
             # remove stopwords
             if remove_stopwords_option:
-                st.write('removing stopwords')
                 df_working["Data"] = df_working["Data"].apply(lambda x: ' '.join([word for word in x.split() if word not in (stop)]))
 
             # strip punctuation
