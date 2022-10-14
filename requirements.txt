@@ -13,6 +13,5 @@ transformers==4.21.3
 umap==0.1.1
 umap_learn==0.5.3
 nltk==3.7
-nltk.download('stopwords')
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.0/en_core_web_sm-3.4.0.tar.gz
 joblib==1.1.0
