@@ -1,6 +1,6 @@
 FROM python:3.7
 
-WORKDR 
+WORKDIR /topic_modelling_app
 
 RUN /usr/local/bin/python -m pip install --upgrade pip
 
@@ -8,7 +8,6 @@ COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt 
 
-# Expose port
 EXPOSE 8501
 
 COPY ./pages ./pages
