@@ -1,3 +1,1 @@
-sudo add-apt-repository ppa:linuxuprising/java
-sudo apt update
-sudo apt install oracle-java17-installer
+default-jre
