@@ -136,7 +136,6 @@ if uploaded_json is not None:
 
             # remove stopwords
             if remove_stopwords_option and clean_data_button:
-                st.write('remove_stopwords_option')
                 #df_working["Data"] = df_working["Data"].apply(lambda x: ' '.join([word for word in x.split() if word not in (stop)]))
                 df_working["Data"] = df_working.apply(lambda row: remove_stopwords(row['Data']), axis=1)
 
