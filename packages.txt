@@ -1,0 +1,3 @@
+add-apt-repository ppa:linuxuprising/java
+apt update
+apt install oracle-java17-installer
