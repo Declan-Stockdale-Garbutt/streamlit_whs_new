@@ -5,6 +5,8 @@ import pandas as pd
 import string
 import spacy
 import math
+import tika
+tika.initVM() # new
 from tika import parser
 import uuid
 from os import listdir
