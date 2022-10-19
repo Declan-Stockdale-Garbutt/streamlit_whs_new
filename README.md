@@ -1,6 +1,11 @@
-# Streamlit application built for WHS as part of MDSI iLabs 2 subject
+# WHS Streamlit Application
+This application was developed as part of the iLabs 2 subject
 
-## This application can either be run locally or hosted on the cloud  from https://declan-stockdale-streamlit-whs-new-streamlit-app-muwg9c.streamlitapp.com/
-## The cloud deployment may not work with the pdf scraping however all other functionality should be available
+## Running the application
+### Locally
+The files can be downloaded locally either into the root directory or into a virtual environment.
 
-## To deploy the app on a local machine, first clone the repo
+### Online
+The app has been deloyed in the streamlit app here https://declan-stockdale-streamlit-whs-new-streamlit-app-muwg9c.streamlitapp.com
+It is fully functional online however it takes additional time to load pages and run certain functionalities of the app.
+
