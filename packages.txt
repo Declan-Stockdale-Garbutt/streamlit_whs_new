@@ -1,1 +1,1 @@
-RUN apt-get install -y default-jdk
+apt-get install -y default-jdk
