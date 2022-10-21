@@ -19,23 +19,29 @@ Before you begin, ensure you have met the following requirements:
 **Instructions for `conda`**
 
 ```bash
-# Create virtual environment
-$ conda create -n streamlit_whs python=3.8
+# Create virtual environment click y to install additional downloads if required
+$ conda create -n streamlit_whs_new python=3.8
 
 # Activate the virtual environment:
-$ conda activate streamlit_whs
+$ conda activate streamlit_whs_new
 
 # clone directory into virtual environment
-(streamlit_whs)$git clone https://github.com/Declan-Stockdale/streamlit_whs_new
+(streamlit_whs_new)$ git clone https://github.com/Declan-Stockdale/streamlit_whs_new.git
+
+# move into virtual environment directory
+$ cd streamlit_whs_new
 
 # install required python packages
-(streamlit_whs)$ pip install -r requirements.txt
+(streamlit_whs_new)$ pip install -r requirements.txt
+
+# If error for failed building wheel for hdbscan run the following then repeat previous line
+(streamlit_whs_new)$ conda install -c conda-forge hdbscan
 
 # Run the app
-(streamlit_whs)$ streamlit streamlit_app.py
+(streamlit_whs_new)$ streamlit streamlit_app.py
 
 # To deactivate (when you're done):
-(streamlit_whs)$ conda deactivate
+(streamlit_whs_new)$ conda deactivate
 ```
 
 
