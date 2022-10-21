@@ -44,6 +44,21 @@ $ cd streamlit_whs_new
 (streamlit_whs_new)$ conda deactivate
 ```
 
+To access the app later without re-installing it
+
+```bash
+# Activate the environment
+$conda activate streamlit_whs_new
+
+# navigate inside the directory
+(streamlit_whs_new)$cd streamlit_whs_new
+
+# run app
+(streamlit_whs_new)$stremlit run streamlit_app.py
+
+# To deactivate (when you're done):
+(streamlit_whs_new)$ conda deactivate
+```
 
 
 ### Online
