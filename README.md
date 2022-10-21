@@ -5,6 +5,7 @@ This application was developed as part of the iLabs 2 subject
 ### Locally
 The files can be downloaded locally either into the root directory or into a virtual environment. 
 
+#### using conda
 
 ```bash
 $ conda create -n streamlit_whs python=3.8
