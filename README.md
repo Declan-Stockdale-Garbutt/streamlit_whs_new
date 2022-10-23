@@ -62,6 +62,6 @@ $conda activate streamlit_whs_new
 
 
 ### Online
-The app has been deloyed in the streamlit app here https://declan-stockdale-streamlit-whs-new-streamlit-app-muwg9c.streamlitapp.com
+The app has been deloyed in the streamlit cloud here https://declan-stockdale-streamlit-whs-new-streamlit-app-muwg9c.streamlitapp.com
 It is fully functional online however it takes additional time to load pages and run certain functionalities of the app.
 
