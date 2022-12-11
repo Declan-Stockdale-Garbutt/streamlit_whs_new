@@ -124,8 +124,14 @@ Also includes interactive table of most frequent words for each year in the uplo
 
 ### Top2Vec model 
 This is where the Top2Vec model is created using the uploaded json file. A new model can be createdor alternatively a previously created model can be uploaded.
-Training a model can taks some time
+Training a model can taks some time. Each document is assigned to a topic.
+
+The results are the number of documents within each topic as well as interactive tables howing the documents within each topic
+
+
 ![image](https://user-images.githubusercontent.com/53500810/206887156-5c83509e-05a5-4999-bf35-bc6cd27167f7.png)
+
+![image](https://user-images.githubusercontent.com/53500810/206887323-feb52a94-f39b-4dd9-ace4-9378d5b6f17c.png)
 
 
 
@@ -137,30 +143,83 @@ Generate word cloubds for each topic discoverd
 
 
 ### Top2Vec search documents
+This page allows for the user to input a keyword e.g. exercise and the top 10 documents associated with that word will be returned along with a ~100 word summary.
+It can take a long time on the first use as it must load the sumamrisation model which can take some time.
+
+
+![image](https://user-images.githubusercontent.com/53500810/206887400-d4789298-10ad-4097-9887-5ec8e63a4c1d.png)
 
 
 
 ### Top2Vec search similar keywords
+Enter a keyword and find similar keywords. This can be used to expand searches to find new sources.
+
+![image](https://user-images.githubusercontent.com/53500810/206887429-e57cb656-0d29-4dbc-8e5e-88419a7f808f.png)
 
 
 ### Top2Vec keyword frequency analysis
+Using the keywords extracted using KeyBERT and topic assignment of Top2Vec model for each document, the keywords within each topic are displayed in an interactive table for both topic and year
+
+![image](https://user-images.githubusercontent.com/53500810/206887511-f0800d02-7dce-4231-8b03-5862c0f58d55.png)
 
 
 ### BERTopic (language model)
 This is where the BERTopic model is created using the uploaded json file. A new model can be createdor alternatively a previously created model can be uploaded.
-Training a model can taks some time
+Training a model can takes some time. 
+
+There is a known bug where uploading a previously cleaned file results in an error in the Load json page. This can be remedied by uploading the file as if it was new and not selecting any additional cleaning options.
+
+![image](https://user-images.githubusercontent.com/53500810/206887540-0b11482a-954f-479f-a63a-797286817b48.png)
+
+The model assigns each document to a topic. The results of the page initially include a table of documents for each topic along with various visuals shown below. The visuals themselves take a while to load.
+
+![image](https://user-images.githubusercontent.com/53500810/206887953-cfbc8a9c-a6ad-4fb4-a153-33fdacddd923.png)
+
+#### Visual document embeddings
+The figure shows the proximity of topics and the underlying documents. This can be used to gain insight into what topics are similar to others. 
+
+![image](https://user-images.githubusercontent.com/53500810/206888080-7178cb40-2d00-49bf-acad-d7a63933c9da.png)
+
+#### Heatmap of topics
+This shows a correlation matrix of how all how much all topics are related. A darker square incdicates more related, whereas a light square indicates less relatedness.
+
+#### Hierarchial Tree diagram
+
+![image](https://user-images.githubusercontent.com/53500810/206888121-89fd3002-79f3-4d71-b8ad-579b75147f41.png)
+
+
+![image](https://user-images.githubusercontent.com/53500810/206888107-792f6e6c-7cb4-425d-a032-b6ff0bbe5870.png)
+
+
+#### Barchart
+Top 10 words for each topic fro BERTopic model
+![image](https://user-images.githubusercontent.com/53500810/206888144-88466846-232a-4694-8a49-d8022008eaf4.png)
+
+#### Topics over time
+This shows how the frequency of each topic changes over time. The timestamps used are the year values within the inital cleaned dataframe. It is interactive and topics can be removed or selected by clicking the topic of interest on the right
+
+![image](https://user-images.githubusercontent.com/53500810/206888182-ed0b06b8-19b0-4b48-a48a-2b54b7aaee7a.png)
+
 
 ### BERTopic similar keywords
+The result of this page is a table of topics and keywords which are most similar to the input keyword.
+
+![image](https://user-images.githubusercontent.com/53500810/206888215-18a13ebb-2e32-421b-9f31-39d04bf7a86e.png)
 
 
 ### BERTopic keyword frequency analysis
+The result of the generated topics for each document and combined with the keyword analysis output
+
+An interactive table for each topic is created showing the frequency of keywords over time.
+
+![image](https://user-images.githubusercontent.com/53500810/206888230-5c79544c-9107-49ff-9236-df4b3dd03515.png)
 
 
 ### Work in progress
-
+Had functionality to implemetn PyLDAVis but due to dependency issue it was removed. This is a place holder while work arounds are explored
 
 ### Bugs and issues
-
+Describes various bugs and issues associated with the app. If you find additional bugs not mentioned, please contact the authors or submit a pull request
 
 
 
