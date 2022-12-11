@@ -54,7 +54,7 @@ $conda activate streamlit_whs_new
 (streamlit_whs_new)$cd streamlit_whs_new
 
 # run app
-(streamlit_whs_new)$stremlit run streamlit_app.py
+(streamlit_whs_new)$streamlit run streamlit_app.py
 
 # To deactivate (when you're done):
 (streamlit_whs_new)$ conda deactivate
