@@ -112,12 +112,28 @@ Upload a json file. Should be used after using a previous page to generate a jso
 ### Basic Keyword Analysis
 A json must be uploaded for this page to proceed. If an error is shown, please click the button and it will disappear. This is a known bug.
 
-Keyword extraction will occur using KeyBERT algorithm 
+Keyword extraction will occur using KeyBERT algorithm. This can take a long time
 
-### Top2Vec model document similarity
+Outputs include most frequent words across data (title and text)
+![image](https://user-images.githubusercontent.com/53500810/206887073-ecb9500b-0f49-4820-ba65-389fdcb57afa.png)
+
+Also includes interactive table of most frequent words for each year in the uploaded file
+![image](https://user-images.githubusercontent.com/53500810/206887107-a44fc25c-0a33-4952-83fb-1d18b900af79.png)
+
+
+
+### Top2Vec model 
+This is where the Top2Vec model is created using the uploaded json file. A new model can be createdor alternatively a previously created model can be uploaded.
+Training a model can taks some time
+![image](https://user-images.githubusercontent.com/53500810/206887156-5c83509e-05a5-4999-bf35-bc6cd27167f7.png)
+
+
 
 
 ### Top2Vec wordclouds
+Generate word cloubds for each topic discoverd
+
+![image](https://user-images.githubusercontent.com/53500810/206887276-8adef1c9-8ce3-4421-a00b-f167be15ca12.png)
 
 
 ### Top2Vec search documents
@@ -131,7 +147,8 @@ Keyword extraction will occur using KeyBERT algorithm
 
 
 ### BERTopic (language model)
-
+This is where the BERTopic model is created using the uploaded json file. A new model can be createdor alternatively a previously created model can be uploaded.
+Training a model can taks some time
 
 ### BERTopic similar keywords
 
